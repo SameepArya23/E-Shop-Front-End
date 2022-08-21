@@ -2,7 +2,6 @@ import "./login-address.styles.css";
 import Button from "../buttons/buttons.component";
 import { useContext } from "react";
 import { UserContext } from "../../context/user.context";
-import { async } from "@firebase/util";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 
 const LoginAdressSection = () => {

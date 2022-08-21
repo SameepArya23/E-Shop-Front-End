@@ -1,10 +1,7 @@
 import { Formik, Field, Form } from "formik";
 import { Fragment, useContext } from "react";
 import { UserContext } from "../../context/user.context";
-import {
-  createAuthUserWithEmailAndPassword,
-  createUserDocumentFromAuth,
-} from "../../utils/firebase/firebase.utils";
+import { createAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 import Button from "../buttons/buttons.component";
 
 import "./sign-up-form.styles.css";
@@ -23,14 +20,8 @@ const SignUp = () => {
     }
 
     try {
-      const { user } = await createAuthUserWithEmailAndPassword(
-        email,
-        password,
-        displayName
-      );
-      // await createUserDocumentFromAuth(user, { displayName });
+      await createAuthUserWithEmailAndPassword(email, password, displayName);
 
-      // setCurrentUser(user);
       setSignUpOpen(false);
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {

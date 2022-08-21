@@ -15,13 +15,16 @@ const Login = () => {
     const { email, password } = value;
 
     try {
-      const { user } = await signInAuthUserWithEmailAndPassword(
-        email,
-        password
-      );
-      //   setCurrentUser(user);
-      setLoginOpen(false);
-    } catch (error) {}
+      await signInAuthUserWithEmailAndPassword(email, password);
+    } catch (error) {
+      if (error.code === "auth/wrong-password") {
+        alert("Password is incorrect");
+      }
+
+      if (password.length < 8) {
+        alert("Password should have 8 charecters");
+      }
+    }
   };
 
   return (
