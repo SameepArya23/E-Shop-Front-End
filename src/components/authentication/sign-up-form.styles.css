@@ -1,0 +1,34 @@
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 35px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid white;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+}
+
+.sign-up-input{
+    border: 1px solid #43d890;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+}
+
+.sign-up-button-contaianer{
+    display: flex;
+}

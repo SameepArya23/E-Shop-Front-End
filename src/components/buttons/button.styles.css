@@ -1,0 +1,25 @@
+.button-container{
+    outline: none;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 35px;
+    background-color: #43d890;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.button-container:hover{
+    background-color: #43d890b0;
+}
+
+.inverted{
+    background-color: white;
+    border: 1px solid #4e4e4e;
+    color: #303030;
+}
+
+.inverted:hover{
+    background-color: #4e4e4e17;
+}

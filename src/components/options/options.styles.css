@@ -1,0 +1,15 @@
+.options-container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.back-option{
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}

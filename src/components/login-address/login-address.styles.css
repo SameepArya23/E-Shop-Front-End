@@ -1,0 +1,54 @@
+.login-address-section{
+    width: 38%;
+    margin-top: 30px;
+}
+
+.heading{
+    font-size: large;
+    font-weight: 500;
+    color: #303030;
+    margin: 20px 0
+}
+
+.sub-heading{
+    font-size: medium;
+    font-weight: 400;
+    color: #303030;
+}
+
+.address-form{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-container{
+    width: 65%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input{
+    border: 1px solid #969696;
+    outline: none;
+    padding: 14px 35px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+.log-out-link{
+    color: #43d890;
+    font-size: medium;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.log-out-link:hover{
+    text-decoration: underline;
+}

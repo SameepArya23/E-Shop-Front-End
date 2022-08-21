@@ -1,0 +1,46 @@
+.payment{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.payment-option{
+    width: 105px;
+    height: 55px;
+    border: 1px solid #303030;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-delivery-section{
+    width: 25%;
+}
+
+.delivery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.delivery-option{
+    width: 162px;
+    height: 55px;
+    border: 1px solid #303030;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-logo{
+    width: 44px;
+    height: auto;
+}
